@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will You Be Mine?</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #81c21a, #fad0c4);
+      text-align: center;
+    }
+
+    h1 {
+      color: #d12b2b;
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .button-container {
+      display: flex;
+      gap: 20px;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    #yes {
+      background-color: #28a745;
+      color: white;
+    }
+
+    #yes:hover {
+      background-color: #218838;
+    }
+
+    #no {
+      background-color: #dc3545;
+      color: white;
+      position: relative;
+    }
+
+    #no:hover {
+      background-color: #c82333;
+    }
+  </style>
+</head>
+<body>
+    <h2> My Dear Love,</h2><br>
+       <p> From the moment I met you, my world transformed into something magical. It’s as though the <br>
+        universe conspired to bring your light into my life, and since then, every day has felt a little brighter, <br>
+        every moment a little more meaningful. <br>
+        There’s something about your smile—it’s the kind of smile that could light up the darkest night. <br>
+        Your laughter is music to my soul, a melody I could listen to forever. And those eyes... they hold the stars. <br>
+        I’ve found a home in your presence, a peace I never thought possible <br>
+
+        I love you more than words can say, and I want to spend the rest of my life with you. <br><br>
+        With all my heart,<br>
+        Your.....</p>
+  <h1>Will you be mine? ❤️</h1>
+  <div class="button-container">
+    <button id="yes">Yes</button>
+    <button id="no">No</button>
+  </div>
+
+  <script>
+    const noButton = document.getElementById('no');
+
+    noButton.addEventListener('mouseover', () => {
+      const x = Math.random() * (window.innerWidth - noButton.offsetWidth);
+      const y = Math.random() * (window.innerHeight - noButton.offsetHeight);
+      noButton.style.position = 'absolute';
+      noButton.style.left = `${x}px`;
+      noButton.style.top = `${y}px`;
+    });
+
+    document.getElementById('yes').addEventListener('click', () => {
+      alert('I Love You so much....! ❤️');
+    });
+
+    noButton.addEventListener('click', () => {
+      alert('No is not an option! 😜');
+    });
+  </script>
+</body>
+</html>
